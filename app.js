@@ -12,7 +12,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 var sess = {
   secret: 'keyboard cat',
-  cookie: {}
+  resave: false,
+  saveUninitialized: false
 }
 if (app.get('env') === 'production') {
   app.set('trust proxy', 1) // trust first proxy
