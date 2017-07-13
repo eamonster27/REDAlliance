@@ -1,0 +1,27 @@
+{
+  "name": "expresssequelizesocialnetwork",
+  "version": "1.0.0",
+  "description": "Social network using Express and Sequelize.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eamonster27/ExpressSequelizeSocialNetwork.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eamonster27/ExpressSequelizeSocialNetwork/issues"
+  },
+  "homepage": "https://github.com/eamonster27/ExpressSequelizeSocialNetwork#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "express-validator": "^3.2.1",
+    "mustache-express": "^1.2.5",
+    "sequelize": "^4.3.1"
+  }
+}
