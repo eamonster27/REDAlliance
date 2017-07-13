@@ -40,12 +40,13 @@ nav a:hover {
   font-size: 18px;
 }
 
-.log-status {
-  padding-bottom: 30px;
+/*----------HOMEPAGE----------*/
+/*----------HOMEPAGE----------*/
+/*----------HOMEPAGE----------*/
+.gabble-posts {
+  margin-top: 10px;
 }
-/*----------HOMEPAGE----------*/
-/*----------HOMEPAGE----------*/
-/*----------HOMEPAGE----------*/
+
 .post {
   display: flex;
   flex-flow: row nowrap;
@@ -57,22 +58,57 @@ nav a:hover {
 }
 
 .post-details {
+  width: 79%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.post-details-title {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 10px 0px 5px 0px;
+}
+
+.post-details-title > h4 {
+  margin-right: 5px;
+  align-self: flex-start;
+  margin-top: 0px;
+}
+
+.post-details-title a {
+  text-decoration: none;
+  color: blue;
+}
+
+.post-details-title > span {
+  font-size: 14px;
 }
 
 .post-options {
-  align-self: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 19%;
 }
 
 .post-options > input[name="like"]{
   border-style: none;
   background-color: #3498db;
   color: white;
+  width: 60px;
+  height: 25px;
+  margin-bottom: 5px;
 }
 
 .post-options > input[name="delete"]{
   border-style: none;
   background-color: #3498db;
   color: white;
+  width: 60px;
+  height: 25px;
 }
 
 /*----------LOGIN----------*/
@@ -118,7 +154,6 @@ nav a:hover {
 /*----------SIGNUP----------*/
 /*----------SIGNUP----------*/
 /*----------SIGNUP----------*/
-
 .signup {
   margin-left: 10px;
   display: flex;
@@ -155,3 +190,77 @@ nav a:hover {
   width: 180px;
   height: 30px;
 }
+/*----------NEWPOST----------*/
+/*----------NEWPOST----------*/
+/*----------NEWPOST----------*/
+.create-gab {
+  margin: 0px 10px 0px 10px;
+}
+
+.create-gab-heading {
+  color: #34495e;
+  margin: 20px 0px 5px 0px;
+}
+
+.create-gab-heading > label {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.create-gab-form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.create-gab-form > input[type="submit"] {
+  margin-top: 5px;
+  border-style: none;
+  background-color: #3498db;
+  color: white;
+  height: 30px;
+}
+
+/*----------POST----------*/
+/*----------POST----------*/
+/*----------POST----------*/
+
+
+.liked-by {
+  margin-top: 5px;
+}
+
+.liked-by > li {
+  list-style-type: none;
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------POST----------*/
+/*----------POST----------*/
+/*----------POST----------*/

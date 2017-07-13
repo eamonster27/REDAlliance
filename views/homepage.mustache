@@ -2,16 +2,67 @@
   <!-- Inject as -->
   <div class="post">
     <div class="post-details">
-      <h4><s>Username: </s>Post contents</h4>
-      <p><i>Date and Time</i></p>
-      <p># of Likes</p>
+      <div class="post-details-title">
+        <h4><a href="/post">{Username}: </a></h4>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+      </div>
+      <span><i>{Date and Time}</i></span>
+      <p>{#} of Likes</p>
     </div>
 
     <div class="post-options">
+      {{#user}}
       <input type="button" name="like" value="Like">
       <!-- If logged in user post, -->
-      <input type="button" name="delete" value="Delete">
+      <!-- If post username === user username -->
+        <input type="button" name="delete" value="Delete">
+      <!-- *********************************** -->
+      {{/user}}
     </div>
   </div>
-<!----------------->
+  <!----------------->
+  <!-- Inject as -->
+  <div class="post">
+    <div class="post-details">
+      <div class="post-details-title">
+        <h4><a href="/post">{Username}: </a></h4>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+      </div>
+      <span><i>{Date and Time}</i></span>
+      <p>{#} of Likes</p>
+    </div>
+
+    <div class="post-options">
+      {{#user}}
+      <input type="button" name="like" value="Like">
+      <!-- If logged in user post, -->
+      <!-- If post username === user username -->
+        <input type="button" name="delete" value="Delete">
+      <!-- *********************************** -->
+      {{/user}}
+    </div>
+  </div>
+  <!----------------->
+  <!-- Inject as -->
+  <div class="post">
+    <div class="post-details">
+      <div class="post-details-title">
+        <h4><a href="/post">{Username}: </a></h4>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+      </div>
+      <span><i>{Date and Time}</i></span>
+      <p>{#} of Likes</p>
+    </div>
+
+    <div class="post-options">
+      {{#user}}
+      <input type="button" name="like" value="Like">
+      <!-- If logged in user post, -->
+      <!-- If post username === user username -->
+        <input type="button" name="delete" value="Delete">
+      <!-- *********************************** -->
+      {{/user}}
+    </div>
+  </div>
+  <!----------------->
 </div>
