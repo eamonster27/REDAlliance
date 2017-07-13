@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gabble</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+          {{#user}}
+            <div class="gabble-nav">
+              <a href="/">Gabble</a>
+              <a href="/newpost">New Gab</a>
+            </div>
+
+            <div class="log-status">
+              <span>Welcome, {{username}}</span>
+              <form class="logout" action="/logout" method="post">
+                <input type="submit" name="" value="Logout">
+              </form>
+          </div>
+          {{/user}}
+          {{^user}}
+            <div class="gabble-nav">
+              <a href="/">Gabble</a>
+            </div>
+
+            <div class="log-status">
+              <a href="/login">Log In</a>
+              <a href="/signup">Sign Up</a>
+            </div>
+          {{/user}}
+      </nav>
+    </header>
+
+    {{{yield}}}
+  </body>
+</html>

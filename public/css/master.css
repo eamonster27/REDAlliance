@@ -1,0 +1,157 @@
+/*----------BASE----------*/
+/*----------BASE----------*/
+/*----------BASE----------*/
+body {
+  margin: 0px;
+  background-color: #ecf0f1;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #3498db;
+  height: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 2px 0px 10px;
+  height: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin-right: 8px;
+}
+
+nav a:hover {
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color: white;
+}
+
+.gabble-nav {
+  font-size: 18px;
+}
+
+.log-status {
+  padding-bottom: 30px;
+}
+/*----------HOMEPAGE----------*/
+/*----------HOMEPAGE----------*/
+/*----------HOMEPAGE----------*/
+.post {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 0px 10px 0px 10px;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color: #34495e;
+}
+
+.post-details {
+}
+
+.post-options {
+  align-self: center;
+}
+
+.post-options > input[name="like"]{
+  border-style: none;
+  background-color: #3498db;
+  color: white;
+}
+
+.post-options > input[name="delete"]{
+  border-style: none;
+  background-color: #3498db;
+  color: white;
+}
+
+/*----------LOGIN----------*/
+/*----------LOGIN----------*/
+/*----------LOGIN----------*/
+.login {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 20px;
+}
+
+.login-heading {
+  color: #34495e;
+}
+
+.login-credentials{
+  display: flex;
+  flex-flow: column nowrap;
+  width: 180px;
+  font-size: 14px;
+
+}
+.login-credentials > input{
+  height: 20px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.login-submit > input[type="submit"]{
+  border-style: none;
+  background-color: #3498db;
+  color: white;
+  width: 180px;
+  height: 30px;
+}
+
+/*----------SIGNUP----------*/
+/*----------SIGNUP----------*/
+/*----------SIGNUP----------*/
+
+.signup {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.signup-form {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 20px;
+}
+
+.signup-heading {
+  color: #34495e;
+}
+
+.signup-credentials{
+  display: flex;
+  flex-flow: column nowrap;
+  width: 180px;
+  font-size: 14px;
+
+}
+.signup-credentials > input{
+  height: 20px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.signup-submit > input[type="submit"]{
+  border-style: none;
+  background-color: #3498db;
+  color: white;
+  width: 180px;
+  height: 30px;
+}
