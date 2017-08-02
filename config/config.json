@@ -16,8 +16,8 @@
   "production": {
     "username": "EamonBachari",
     "password": null,
-    "database": "gabble",
-    "host": "127.0.0.1",
+    "database": "DATABASE_URL",
+    "host": "HEROKU_POSTGRESQL_YELLOW_URL",
     "dialect": "postgres"
   }
 }
