@@ -14,8 +14,8 @@
     "dialect": "postgres"
   },
   "production": {
-    "username": "EamonBachari",
-    "password": null,
+    "username": "dfqamvxzvcfeds",
+    "password": "36426fb6b342184a3bf58141530500ea3835936e928af984ce83e1673a493553",
     "database": "d5s3m5r65m2217",
     "host": "Dec2-23-23-225-12.compute-1.amazonaws.com",
     "dialect": "postgres"
