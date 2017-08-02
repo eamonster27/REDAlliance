@@ -13,19 +13,6 @@ app.use(bodyParser.urlencoded({extended: false}));
 const port = process.env.PORT || 3000;
 app.listen(port);
 
-var sess = {
-  secret: 'keyboard cat',
-  resave: false,
-  saveUninitialized: false,
-  secure: false
-}
-
-if (app.get('env') === 'production') {
-  app.set('trust proxy', 1) // trust first proxy
-  sess.cookie.secure = true // serve secure cookies
-}
-app.use(session(sess));
-
 const sessionRoutes = require('./routes/session');
 const registerRoutes = require('./routes/register');
 const homepageRoute = require('./routes/homepage');
