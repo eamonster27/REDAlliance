@@ -16,7 +16,7 @@
   "production": {
     "username": "EamonBachari",
     "password": null,
-    "database": "hobby-dev",
+    "database": "HEROKU_POSTGRESQL_YELLOW_URL",
     "host": "DATABASE_URL",
     "dialect": "postgres"
   }
