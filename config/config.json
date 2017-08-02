@@ -17,7 +17,7 @@
     "username": "EamonBachari",
     "password": null,
     "database": "DATABASE_URL",
-    "host": "127.0.0.1",
+    "host": "postgres://hofxqlhrodlynw:c0479ca28ab87be5d92790601cdccd3913eecc79d3820764935cb4f58f719e01@ec2-107-20-188-239.compute-1.amazonaws.com:5432/d1s5o0fbs8ga5g",
     "dialect": "postgres"
   }
 }
