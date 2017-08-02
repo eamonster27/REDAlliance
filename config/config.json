@@ -16,8 +16,8 @@
   "production": {
     "username": "EamonBachari",
     "password": null,
-    "database": "HEROKU_POSTGRESQL_YELLOW_URL",
-    "host": "DATABASE_URL",
+    "database": "d5s3m5r65m2217",
+    "host": "Dec2-23-23-225-12.compute-1.amazonaws.com",
     "dialect": "postgres"
   }
 }
