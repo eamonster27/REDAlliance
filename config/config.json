@@ -18,7 +18,6 @@
     "password": null,
     "database": "gabble",
     "host": "127.0.0.1",
-    "dialect": "postgres",
-    "native": true
+    "dialect": "postgres"
   }
 }
