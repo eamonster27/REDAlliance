@@ -11,8 +11,14 @@
       <input type="password" name="password">
     </div>
 
+    {{#error}}
+      <p class="error">Incorrect Username or Password.</p>
+    {{/error}}
+
     <div class="login-submit">
       <input type="submit" value="Log in">
+      <button type="button"><a href="/signup">Sign Up</a></button>
     </div>
+
   </form>
 </div>

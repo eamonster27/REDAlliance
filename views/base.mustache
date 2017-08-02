@@ -8,29 +8,29 @@
   <body>
     <header>
       <nav>
-          {{#user}}
-            <div class="gabble-nav">
-              <a href="/">Gabble</a>
-              <a href="/newpost">New Gab</a>
-            </div>
-
-            <div class="log-status">
-              <span>Welcome, {{username}}</span>
-              <form class="logout" action="/logout" method="post">
-                <input type="submit" name="" value="Logout">
-              </form>
+        {{#user}}
+          <div class="gabble-nav">
+            <a href="/">Gabble</a>
+            <a href="/newpost">New Gab</a>
           </div>
-          {{/user}}
-          {{^user}}
-            <div class="gabble-nav">
-              <a href="/">Gabble</a>
-            </div>
 
-            <div class="log-status">
-              <a href="/login">Log In</a>
-              <a href="/signup">Sign Up</a>
-            </div>
-          {{/user}}
+          <div class="log-status">
+            <span>Welcome, {{username}}</span>
+            <form class="logout" action="/logout" method="post">
+              <input type="submit" name="" value="Logout">
+            </form>
+        </div>
+        {{/user}}
+        {{^user}}
+          <div class="gabble-nav">
+            <a href="/">Gabble</a>
+          </div>
+
+          <div class="log-status">
+            <a href="/login">Log In</a>
+            <a href="/signup">Sign Up</a>
+          </div>
+        {{/user}}
       </nav>
     </header>
 

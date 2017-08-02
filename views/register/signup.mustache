@@ -9,13 +9,15 @@
 
       <label for="password">Password: </label>
       <input type="password" name="password">
-
-      <label for="confpassword">Confirm Password: </label>
-      <input type="password" name="confpassword">
     </div>
+
+    {{#error}}
+      <p class="error">Problem with username or password.</p>
+    {{/error}}
 
     <div class="signup-submit">
       <input type="submit" value="Sign up">
+      <button type="button"><a href="/login">Log in</a></button>
     </div>
   </form>
 </div>

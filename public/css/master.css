@@ -143,12 +143,21 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-.login-submit > input[type="submit"]{
+.login-submit > input[type="submit"], .login-submit > button {
   border-style: none;
   background-color: #3498db;
   color: white;
-  width: 180px;
+  width: 90px;
   height: 30px;
+}
+
+.login-submit a {
+  text-decoration: none;
+  color: white;
+}
+
+.error {
+  color: red;
 }
 
 /*----------SIGNUP----------*/
@@ -183,12 +192,17 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-.signup-submit > input[type="submit"]{
+.signup-submit > input[type="submit"], .signup-submit > button{
   border-style: none;
   background-color: #3498db;
   color: white;
-  width: 180px;
+  width: 90px;
   height: 30px;
+}
+
+.signup-submit a {
+  text-decoration: none;
+  color: white;
 }
 /*----------NEWPOST----------*/
 /*----------NEWPOST----------*/
