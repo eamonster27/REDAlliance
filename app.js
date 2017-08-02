@@ -10,17 +10,21 @@ app.use(express.static('public'));
 app.set('layout', 'base');
 app.use(bodyParser.urlencoded({extended: false}));
 
-// var sess = {
-//   secret: 'keyboard cat',
-//   resave: false,
-//   saveUninitialized: false
-// }
-//
-// if (app.get('env') === 'production') {
-//   app.set('trust proxy', 1) // trust first proxy
-//   sess.cookie.secure = true // serve secure cookies
-// }
-// app.use(session(sess));
+const port = process.env.PORT || 3000;
+app.listen(port);
+
+var sess = {
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: false,
+  secure: false
+}
+
+if (app.get('env') === 'production') {
+  app.set('trust proxy', 1) // trust first proxy
+  sess.cookie.secure = true // serve secure cookies
+}
+app.use(session(sess));
 
 const sessionRoutes = require('./routes/session');
 const registerRoutes = require('./routes/register');
@@ -33,7 +37,3 @@ app.use(registerRoutes);
 app.use(homepageRoute);
 app.use(newpostRoute);
 app.use(postRoute);
-
-app.listen(3000, function(){
-  console.log("Listening on port 3000");
-});
