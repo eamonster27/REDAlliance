@@ -16,8 +16,8 @@
   "production": {
     "username": "EamonBachari",
     "password": null,
-    "database": "DATABASE_URL",
-    "host": "hobby-dev",
+    "database": "hobby-dev",
+    "host": "DATABASE_URL",
     "dialect": "postgres"
   }
 }
