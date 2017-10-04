@@ -26,16 +26,11 @@ if (app.get('env') === 'production') {
   app.set('trust proxy', 1) // trust first proxy
   sess.cookie.secure = true // serve secure cookies
 }
+
 app.use(session(sess));
 
-const sessionRoutes = require('./routes/session');
-const registerRoutes = require('./routes/register');
-const homepageRoute = require('./routes/homepage');
-const newpostRoute = require('./routes/newpost');
-const postRoute = require('./routes/post');
-
-app.use(sessionRoutes);
-app.use(registerRoutes);
-app.use(homepageRoute);
-app.use(newpostRoute);
-app.use(postRoute);
+app.use(require('./routes/session'));
+app.use(require('./routes/register'));
+app.use(require('./routes/homepage'));
+app.use(require('./routes/newpost'));
+app.use(require('./routes/post'));
