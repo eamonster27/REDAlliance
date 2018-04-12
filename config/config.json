@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "EamonBachari",
+    "username": "ebachari",
     "password": null,
-    "database": "gabble",
+    "database": "redalliance",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
-    "username": "EamonBachari",
+    "username": "ebachari",
     "password": null,
-    "database": "gabble",
+    "database": "redalliance",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
-    "username": "dfqamvxzvcfeds",
-    "password": "36426fb6b342184a3bf58141530500ea3835936e928af984ce83e1673a493553",
-    "database": "d5s3m5r65m2217",
-    "host": "ec2-23-23-225-12.compute-1.amazonaws.com",
+    "username": "asvjtyssybojvb",
+    "password": "0ee2fc8bc6b26bad8bc04f5e23db01d59b2a8baf4148e52826b216ab63e77ba5",
+    "database": "d3fuedq70879lm",
+    "host": "ec2-23-21-88-45.compute-1.amazonaws.com",
     "dialect": "postgres"
   }
 }
