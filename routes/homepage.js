@@ -11,10 +11,10 @@ router.get('/', function(req, res){
     res.redirect('/login')
   }
   else {
-    models.Post.findAll()
-    .then(function (posts) {
+    models.event.findAll()
+    .then(function (events) {
       res.render("homepage", {
-        posts: posts,
+        items: events,
         user: session.user
       });
     })

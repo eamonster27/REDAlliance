@@ -13,7 +13,7 @@ router.get('/login', function(req, res){
 
 router.post('/auth', function(req,res){
   // Authorize login stuff
-  models.User.findOne({
+  models.user.findOne({
     where: {
       username: req.body.username,
       password: req.body.password

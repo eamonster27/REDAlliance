@@ -14,7 +14,7 @@ router.post('/signup', function(req, res){
     res.render('register/signup', { error: true });
   }
   else {
-    models.User.findOne({
+    models.user.findOne({
       where: {
         username: req.body.username
       }
@@ -23,7 +23,7 @@ router.post('/signup', function(req, res){
         res.render('register/signup', { error: true })
       }
       else {
-        models.User.create({
+        models.user.create({
           username: req.body.username,
           password: req.body.password
         }).then(function (user){

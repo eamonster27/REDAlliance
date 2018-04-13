@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "ebachari",
+    "username": "postgres",
     "password": null,
     "database": "redalliance",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
-    "username": "ebachari",
+    "username": "postgres",
     "password": null,
     "database": "redalliance",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
-    "username": "asvjtyssybojvb",
-    "password": "0ee2fc8bc6b26bad8bc04f5e23db01d59b2a8baf4148e52826b216ab63e77ba5",
-    "database": "d3fuedq70879lm",
-    "host": "ec2-23-21-88-45.compute-1.amazonaws.com",
+    "username": "postgres",
+    "password": null,
+    "database": "redalliance",
+    "host": "127.0.0.1",
     "dialect": "postgres"
   }
 }
