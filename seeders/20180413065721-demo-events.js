@@ -11,7 +11,7 @@ module.exports = {
           description: "This is description 1.",
           location: "somewhere",
           date: new Date(),
-          imageUrl: "https://www.testhr.pl/img/logo.png",
+          imageUrl: "https://scontent-ort2-2.xx.fbcdn.net/v/t31.0-8/15591390_237157910053485_5637523635573699965_o.jpg?_nc_cat=0&oh=85ae4cf5343ba67bb0c26147f7066bfb&oe=5B6F7594",
           createdAt: new Date(),
           updatedAt: new Date()
         },
@@ -21,7 +21,7 @@ module.exports = {
           description: "This is description 2.",
           location: "somewhere over there",
           date: new Date(),
-          imageUrl: "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+          imageUrl: "https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/23132045_372434539859154_7097675193232167889_n.jpg?_nc_cat=0&oh=b8969e32bb2419da0e82c49e11ef157c&oe=5B6ADAC7",
           createdAt: new Date(),
           updatedAt: new Date()
         }
@@ -29,12 +29,6 @@ module.exports = {
   },
 
   down: function (queryInterface, Sequelize) {
-    /*
-      Add reverting commands here.
-      Return a promise to correctly handle asynchronicity.
-
-      Example:
-      return queryInterface.bulkDelete('Person', null, {});
-    */
+      return queryInterface.bulkDelete('events', null, {});
   }
 };

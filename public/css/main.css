@@ -93,3 +93,7 @@ body {
 .facebook {
   font-size: 22px;
 }
+
+.eventImage {
+  max-height: 300px;
+}
