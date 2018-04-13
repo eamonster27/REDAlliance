@@ -33,4 +33,4 @@ app.use(require('./routes/session'));
 app.use(require('./routes/register'));
 app.use(require('./routes/homepage'));
 app.use(require('./routes/newpost'));
-app.use(require('./routes/post'));
+app.use(require('./routes/events'));
