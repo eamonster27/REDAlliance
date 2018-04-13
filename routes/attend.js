@@ -9,9 +9,7 @@ var jsonParser = bodyParser.json({ type: 'application/json'});
 router.post('/attend', jsonParser, function(req, res){
   var eventId = req.body.id;
   console.log(eventId);
-  var userId = session.user.dataValues.id
-  console.log(userId);
-
+  res.sendStatus(200);
 })
 
 
