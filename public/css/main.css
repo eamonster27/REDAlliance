@@ -11,3 +11,7 @@ body {
 .pagination {
   margin-bottom: 15px;
 }
+
+.eventImage{
+  max-height: 300px;
+}

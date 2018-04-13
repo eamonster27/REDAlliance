@@ -9,7 +9,7 @@ router.get('/events', function(req, res){
     data = data.map(x => x.dataValues);
 
     obj = {};
-    obj.events = data;
+    obj.eventItems = data;
     if(session.user)
       obj.user = session.user.dataValues;
     res.render("events", obj);
