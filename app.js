@@ -8,7 +8,7 @@ app.engine('mustache', mustache());
 app.set('view engine', 'mustache');
 app.use(express.static('public'));
 app.set('layout', 'base');
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({extended: true}));
 
 const port = process.env.PORT || 3000;
 app.listen(port);
@@ -35,3 +35,6 @@ app.use(require('./routes/homepage'));
 app.use(require('./routes/newpost'));
 app.use(require('./routes/events'));
 app.use(require('./routes/attend'));
+
+
+module.exports = app;
