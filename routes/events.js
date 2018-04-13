@@ -8,25 +8,15 @@ const db = require('./db');
 /* GET users listing. */
 router.get('/events', function(req, res, next) {
     // res.send('respond with a resource');
+    return models.event.findAll().then(function(data){
+    data = data.map(x => x.dataValues);
 
-    const values = db.query("SELECT * FROM public.event")
-        .then(function (data) {
-            let values = [];
-            data.map(x => {
-                values.push({
-                    id: x.id,
-                    title: x.title,
-                    description: x.description,
-                    location: x.location,
-                    date: x.date
-                })
-            });
-            console.log(values);
-            res.json(values);
-        })
-        .catch(function (error) {
-            console.log('ERROR:', error)
-        });
+    obj = {};
+    obj.eventItems = data;
+    if(session.user)
+      obj.user = session.user.dataValues;
+    res.render("events", obj);
+  });
 });
 
 /**
