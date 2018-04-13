@@ -29,10 +29,10 @@ router.post('/auth', function(req,res){
   })
 })
 
-router.post("/logout", function(req,res){
+router.get("/logout", function(req,res){
   req.session.destroy(function(){
     session.user = null;
-    res.redirect("/");
+    res.redirect("/login");
   })
 })
 
