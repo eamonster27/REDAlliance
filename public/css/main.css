@@ -1,5 +1,7 @@
 body {
   padding-top: 54px;
+  background-color: #dfe6e9;
+
 }
 
 @media (min-width: 992px) {
@@ -10,4 +12,84 @@ body {
 
 .pagination {
   margin-bottom: 15px;
+}
+
+html {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+
+}
+
+.homepage {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  align-content: space-around;
+}
+
+.detail-wrapper {
+  padding: 2px;
+  margin: 3px 0px 3px 0px;
+  width: 50%;
+}
+
+.detail-wrapper > h3 {
+  text-align: center;
+  font-size: 45px;
+  font-family: cursive;
+}
+
+.detail-wrapper > p {
+  font-size: 20px;
+  font-family: cursive;
+  margin-top: 20px;
+}
+
+.details {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  margin: 0px 20px 0px 20px;
+  align-items: center;
+}
+
+.details > h1 {
+  font-size: 80px;
+  margin: 20px 0px 20px 0px;
+  font-family: cursive;
+}
+
+.heading-wrapper {
+  background-image: url("../images/RedAlliance2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 55vw;
+  width: 100%;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(248, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-brand, .nav-link, .m-0 {
+  font-family: cursive;
+  font-size: 22px;
+}
+
+.facebook {
+  font-size: 22px;
 }

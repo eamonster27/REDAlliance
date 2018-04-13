@@ -1,50 +1,7 @@
-<!--
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Gabble</title>
-    <link rel="stylesheet" href="css/master.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        {{#user}}
-          <div class="gabble-nav">
-            <a href="/">Gabble</a>
-            <a href="/newpost">New Gab</a>
-          </div>
-
-          <div class="log-status">
-            <span>Welcome, {{username}}</span>
-            <form class="logout" action="/logout" method="post">
-              <input type="submit" name="" value="Logout">
-            </form>
-        </div>
-        {{/user}}
-        {{^user}}
-          <div class="gabble-nav">
-            <a href="/">Gabble</a>
-          </div>
-
-          <div class="log-status">
-            <a href="/login">Log In</a>
-            <a href="/signup">Sign Up</a>
-          </div>
-        {{/user}}
-      </nav>
-    </header>
-
-    {{{yield}}}
-  </body>
-</html>
--->
-
 <!DOCTYPE html>
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -57,15 +14,13 @@
 
     <!-- Custom styles for this template -->
     <link href="css/main.css" rel="stylesheet">
-
   </head>
 
   <body>
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Red Alliance</a>
+        <a class="navbar-brand" href="#">R.E.D. Alliance</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -94,9 +49,9 @@
     {{{yield}}}
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="py-4 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+        <p class="m-0 text-center text-white">&copy; R.E.D. Alliance 2018</p>
       </div>
       <!-- /.container -->
     </footer>

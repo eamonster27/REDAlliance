@@ -1,5 +1,5 @@
 {
-  "name": "expresssequelizesocialnetwork",
+  "name": "redalliance",
   "version": "1.0.0",
   "description": "Social network using Express and Sequelize.",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eamonster27/ExpressSequelizeSocialNetwork.git"
+    "url": "git+https://github.com/eamonster27/REDAlliance.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eamonster27/ExpressSequelizeSocialNetwork/issues"
+    "url": "https://github.com/eamonster27/REDAlliance/issues"
   },
-  "homepage": "https://github.com/eamonster27/ExpressSequelizeSocialNetwork#readme",
+  "homepage": "https://github.com/eamonster27/REDAlliance#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
@@ -24,6 +24,7 @@
     "express-validator": "^3.2.1",
     "migrate": "^0.2.3",
     "mustache-express": "^1.2.5",
+    "mysql2": "^1.5.3",
     "pg": "^6.4.2",
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.37.6",
