@@ -25,16 +25,25 @@
 
 <script>
 $(document).ready(function(){
-  $(".join-btn").click(function(){
+  $(".join-btn").click(function(e){
+    e.preventDefault();
     obj = {};
     obj.id = $(this).data("id");
     console.log(obj)
+    var self = this;
     $.ajax({
         type: "POST",
         url: "/attend",
         data: JSON.stringify(obj),
         contentType:'application/json',
-        success: function(data){alert(data);},
+        success: function(data){
+          $(self).toggleClass("btn-primary");
+          if($(self).html() == "Join")
+            $(self).html("Canncel");
+          else {
+            $(self).html("Join");
+          }
+        },
         failure: function(errMsg) {
             alert(errMsg);
         }
