@@ -3,6 +3,7 @@ const app = express();
 const mustache = require('mustache-express');
 const session = require('express-session');
 const bodyParser = require('body-parser');
+var uuid = require('node-uuid');
 
 app.engine('mustache', mustache());
 app.set('view engine', 'mustache');
@@ -17,6 +18,9 @@ var sess = {
   secret: 'keyboard cat',
   resave: false,
   saveUninitialized: false,
+  genid: function(req) {
+     return uuid();
+  },
   cookie: {
     secure: false
   }

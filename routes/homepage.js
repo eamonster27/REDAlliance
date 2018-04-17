@@ -7,6 +7,8 @@ const session = require('express-session');
 router.get('/', function(req, res){
   console.log("homepage.js router link successful!");
 
+  console.log(req.session.id)
+
   if(!session.user){
     res.redirect('/login')
   }
